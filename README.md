@@ -1,5 +1,5 @@
 # Paint App
-Kitty Paint (A simple drawing application)
+Kitty Paint (a simple drawing application)
 # Technologies
   - React
   - SASS
