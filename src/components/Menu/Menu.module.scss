@@ -1,0 +1,136 @@
+.menu {
+  width: 800px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #fbdc9b;
+  margin: auto;
+  margin-top: 10px;
+  font-family: "Madimi One";
+}
+
+.label {
+  margin: 0px 20px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 7.5px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #e6a140;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+    &:focus {
+      background: #e6a140;
+    }
+  }
+
+  &::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 30px;
+    width: 15px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #e6a140;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+
+  &::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+
+  &::-ms-fill-lower {
+    background: #e6a74e;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+
+    &:focus {
+      background: #e6a74e;
+    }
+  }
+
+  &::-ms-fill-upper {
+    background: #e6a74e;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+
+    &:focus {
+      background: #e6a74e;
+    }
+  }
+
+  &::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background: white;
+  color: #000;
+  box-shadow: 0 0 2px 0 #555;
+
+  &::-webkit-color-swatch {
+    border-radius: 5px;
+    border: none;
+  }
+
+  &::-moz-color-swatch {
+    border-radius: 5px;
+    border: none;
+  }
+}

@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
-import "./App.css";
 import { useEffect, useRef, useState } from "react";
-import Menu from './components/Menu';
+import Menu from "./components/Menu/Menu";
+import "./App.css";
 
 function App() {
   const canvasRef = useRef(null);
@@ -20,7 +19,7 @@ function App() {
     ctx.strokeStyle = lineColor;
     ctx.lineWidth = lineWidth;
     ctxRef.current = ctx;
-  }, [lineWidth, lineColor, lineOpacity]);
+  }, [lineColor, lineOpacity, lineWidth]);
 
   const startDrawing = (e) => {
     ctxRef.current.beginPath();
@@ -37,12 +36,14 @@ function App() {
     if (!isDrawing) {
       return;
     }
+    ctxRef.current.lineTo(e.nativeEvent.offsetX, e.nativeEvent.offsetY);
+
     ctxRef.current.stroke();
   };
 
   return (
     <div className="App">
-      <h1>Приложение для рисования</h1>
+      <h1>Kitty Paint</h1>
       <div className="draw-area">
         <Menu
           setLineColor={setLineColor}
